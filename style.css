@@ -1,0 +1,457 @@
+body{
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 19px;
+    font-weight: 300;
+    overflow-x: hidden;
+}
+iframe { 
+    display:block; 
+}
+.section-heading{
+    font-size: 50px;
+    line-height: 55px;
+    margin:10px 0 20px;
+    color: #030101;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+header{
+    background-image: url(images/slider_img.png);
+    height: 140vh;
+    position: relative;
+}
+.navbar .nav-item .nav-link{
+    color: white;
+    padding-left: 2rem;
+    font-size: 20px;
+    font-weight: 500;
+}
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link:active{
+    color: #f06008;
+}
+.btn{
+    color: white;
+    padding-left: 2rem;
+    font-size: 30px;
+    font-weight: 500;
+}
+.btn:hover{
+    color: #f06008;
+}
+header .text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: auto;
+}
+header h1{
+    font-size: 4.5rem;
+    font-weight: 800;
+    margin-top: 11rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+header p{
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+svg{
+    position: absolute;
+    bottom: 0;
+}
+.header-btn{
+    width: auto;
+    height: auto;
+    padding: 1.3rem 5rem;
+    background-color:#f06008;
+    z-index: 1;
+    margin-top: 2rem;
+    color: white;
+    text-decoration: none;
+}
+.header-btn:hover{
+    color: white;
+    font-size: larger;
+    font-weight: 800;
+}
+/*about*/
+#about{
+    background-image: url(images/dottet_bg.png);
+}
+#about p{
+    color: black;
+    text-align: center;
+    padding: 1rem 0;
+}
+#about iframe{
+    border-radius: 40px;
+    margin-top: 1rem;
+}
+#about iframe:focus{
+    outline: none;
+}
+/*courses*/
+#courses{
+    margin-top: 10rem;
+    text-align: center;
+}
+.courses-list {
+    display: flex;
+    padding-top: 2rem;
+}
+.courses-item{
+    text-align: center;
+    padding: 1rem 1rem 3rem;
+}
+.courses-heading{
+    padding: 0.5rem;
+    font-weight: bold;
+}
+/**/
+.read-btn {
+    width: auto;
+    height: auto;
+    padding: 1.3rem 5rem;
+    z-index: 1;
+    color: black;
+    border: 5px solid #f06008;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    overflow: hidden;
+    transition: 0.2s;
+  }
+  .read-btn:hover {
+    box-shadow: 0 0 10px #f06008, 0 0 40px #f06008, 0 0 80px #f06008;
+    transition-delay: 1s;
+  }
+  .read-btn span {
+    position: absolute;
+    display: block;
+  }
+  .read-btn span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #f06008);
+  }
+  .read-btn:hover span:nth-child(1) {
+    left: 100%;
+    transition-delay: 1s;
+  }
+  .read-btn span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #f06008);
+  }
+  .read-btn:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+  }
+  .read-btn span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #f06008);
+  }
+  .read-btn:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+  }
+  .read-btn span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #f06008);
+  }
+  .read-btn:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+  }
+/**/
+
+
+/*schedule*/
+#schedule{
+    margin-top: 10rem;
+}
+#schedule .section-heading{
+    padding-bottom: 1rem;
+}
+.table-container{
+    background-image: url(images/cours_bg.jpg);
+    object-fit: cover;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.schedule-table{
+    background-color: rgb(255, 255, 255, 0.7);
+    height:50vh ;
+    width: 80%;
+    text-align: center;
+}
+.schedule-table .first-tr{
+    padding: 5rem 0 1rem;
+    font-weight: bold;
+    font-size: 25px;
+}
+.schedule-table .last-tr{
+    padding: 1rem 0 5rem;
+    font-weight: bold;
+    font-size: 25px;
+}
+.schedule-table .day{
+    padding: 1rem 4rem;
+    font-weight: bold;
+    font-size: 25px;
+}
+.schedule-table .time{
+    padding: 1rem 4rem;
+    font-weight: bold;
+    font-size: 25px;
+}
+/*stories*/
+#stories{
+    height: auto;
+    margin: 10rem 0 6rem;
+    text-align: center;
+}
+.stories-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    text-align: center;
+}
+.stories-img{
+    width: 240px;
+    height: 240px;
+    margin: 1rem 0;
+}
+.stories-card .stories-h1{
+    color: #06389e;
+    font-size: 35px;
+    font-weight: bold;
+}
+.stories-card .stories-h3{
+   font-weight: 800;
+   margin-bottom: 2rem;
+}
+#stories audio::-webkit-media-controls-play-button,
+     audio::-webkit-media-controls-panel {
+     background-color: rgb(240, 96, 8);
+     color: #fff;
+     }
+#stories audio:focus{
+    outline: none;
+}
+
+/*subscribe*/
+#subscribe{
+    background-image: url(images/blue_bg.png);
+    height: auto;
+}
+#subscribe .container-fluid{
+    width: 100%;
+}
+#subscribe .row{
+    padding: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+.sub-h1{
+    margin-top: 15px;
+    color: white;
+    font-size: 30px;
+}
+.sub-p{
+    color: white;
+}
+.form_subribe input {
+    width: 100%;
+    background: #fff;
+    border: none;
+    height: 60px;
+    padding: 0 170px 0 25px;
+    font-size: 18px;
+    line-height: 60px;
+}
+form {
+    position: relative;
+}
+.form_subribe button {
+    background: #f06008;
+    border: none;
+    color: #fff;
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 170px;
+    height: 60px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 62px;
+}
+.form_subribe {
+    border-radius: 75px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+/*footer*/
+footer{
+    background: #3a3a3a;
+    height: auto;
+    color: white;
+}
+footer .container{
+    padding: 5rem 2rem ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+}
+footer .ul-header{
+    padding-bottom: 1rem;
+    font-weight: bold;
+}
+footer ul li{
+    margin-bottom: 0.5rem;
+}
+footer ul li img{
+    margin-bottom: 1.5rem;
+}
+footer ul a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+footer ul a:hover{
+   color: #f06008;
+}
+/*copy-right*/
+.copy-right{
+    background-color: lightgray;
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    padding-top: 0.5rem;
+}
+
+@media (max-width: 540px) {
+    .section-heading{
+        font-size: 40px;
+        line-height: 40px;
+        margin-top: 2rem;
+    }
+    header{
+        height: 100vh;
+    }
+    header .text-container{
+        display: none;
+    }
+    
+    /*courses*/
+    .courses-list {
+        list-style: none;
+        width: 100%;
+        padding-top: 2rem;
+    }
+    /*schedule*/
+    .table-container{
+        height: 100vh;
+    }
+    .schedule-table .first-tr{
+       padding: 1rem 1rem;
+       font-weight: bold;
+       font-size: 15px;
+}
+    .schedule-table .last-tr{
+      padding: 1rem 1rem;
+      font-weight: bold;
+      font-size: 15px;
+}
+    .schedule-table .day{
+      padding: 1rem 1rem;
+      font-weight: bold;
+      font-size: 15px;
+}
+    .schedule-table .time{
+      padding: 1rem 1rem;
+      font-weight: bold;
+      font-size: 15px;
+}
+/*subscribe*/
+.form_subribe input {
+    width: 100%;
+    background: #fff;
+    border: none;
+    padding: 0 170px 0 25px;
+    font-size: 18px;
+    line-height: 60px;
+}
+.form_subribe button {
+    width: 100px;
+    height: 60px;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+}
+    
+}
+@media (max-width: 768px) {
+    .section-heading{
+        font-size: 40px;
+        line-height: 40px;
+        margin-top: 2rem;
+    }
+    header{
+        height: 100vh;
+    }
+    header .text-container{
+        display: none;
+    }
+     /*schedule*/
+     .table-container{
+        height: 100vh;
+    }
+.schedule-table .first-tr{
+    padding: 1rem 1rem;
+    font-weight: bold;
+    font-size: 20px;
+}
+.schedule-table .last-tr{
+    padding: 1rem 1rem;
+    font-weight: bold;
+    font-size: 20px;
+}
+.schedule-table .day{
+    padding: 1rem 1rem;
+    font-weight: bold;
+    font-size: 20px;
+}
+.schedule-table .time{
+    padding: 1rem 1rem;
+    font-weight: bold;
+    font-size: 20px;
+} 
+}
